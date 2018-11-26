@@ -32,7 +32,7 @@ class Game extends React.Component {
           <Prompt pInput={this.state.mazeSize} onInput={this.boundHandleInputChange} />
         </div>
         <div className="mazeContainer">
-          <Maze mazeLayout={this.state.maze} />
+          <Maze mazeLayout={this.state.maze} playerAction={0} />
         </div>
       </div>)
   }
