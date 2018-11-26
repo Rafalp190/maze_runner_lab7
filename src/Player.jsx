@@ -13,7 +13,7 @@ const Player = ({ action }) => {
     playerLook = <img src={require('../static/assets/running3.png')} alt="up" />
   } else if (action === 4) {
     playerLook = <img src={require('../static/assets/running4.png')} alt="down" />
-  } else {
+  } else if (action === 5) {
     playerLook = <img src={require('../static/assets/winner.png')} alt="win" />
   }
   return playerLook

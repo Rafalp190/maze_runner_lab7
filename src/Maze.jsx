@@ -1,13 +1,12 @@
 import React from 'react'
-import PropTypes from 'prop-types'
 import Block from './Block.jsx'
 import Player from './Player.jsx'
-import './styles/mazeStyle.css'
+import '../static/styles/mazeStyle.css'
 
 const Maze = ({ mazeLayout, playerAction }) => {
   if (mazeLayout === 0) {
     return (
-      <div />
+      <div className="game" />
     )
   }
   return (
@@ -16,11 +15,4 @@ const Maze = ({ mazeLayout, playerAction }) => {
     </div>
   )
 }
-Maze.propTypes = {
-  mazeLayout: PropTypes.array.isRequired,
-  playerAction: PropTypes.number.isRequired,
-
-
-}
-
 export default Maze
